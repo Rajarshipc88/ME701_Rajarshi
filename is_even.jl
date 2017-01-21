@@ -6,5 +6,4 @@ return false
 end
 end
 
-L=is_even(0)
-print(L)
+

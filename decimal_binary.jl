@@ -7,7 +7,7 @@ b=[]
 p=0
 while(p!=1)
 p=floor(x1/2)
-f=trunc(mod(x1,2))
+f=trunc(Int,mod(x1,2))
 push!(b,f)
 x1=p
 end
@@ -22,6 +22,7 @@ f1=1
 else
 f1=0
 end
+f1=trunc(Int,f1)
 push!(b1,f1)
 x_dec=d-f1
 end

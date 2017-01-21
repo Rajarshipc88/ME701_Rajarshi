@@ -10,13 +10,17 @@ break
 end
 
 if is_even(n)==True and is_prime(n)==True
-println("$n is even.\n $n is prime")
+println("%n is even.\n" %(n))
+println("%n is prime.\n",%(n))
 else if is_even(n)==true and is_prime(n)==false
-println("$n is even.\n $n is not prime")
+println("%n is even.\n",%(n))
+println("%n is not prime.\n",%(n))
 else if is_even(n)==false and is_prime(n)==true
-println("$n is odd.\n $n is  prime")
+println("%n is odd.\n",%(n))
+println("%n is prime.\n",%(n))
 else if is_even(n)==false and is_prime(n)==false
-println("$n is odd.\n $n is not prime")
+println("%n is odd.\n",%(n))
+println("%n is not prime.\n",%(n))
 end 
 
 println("Enter True to continue and False to quit:")

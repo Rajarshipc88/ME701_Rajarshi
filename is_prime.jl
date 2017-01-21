@@ -7,9 +7,4 @@ end
 return true
 end
 
-g=is_prime(9)
-if (g)
-print("TRUE")
-else
-print("FALSE")
-end
+

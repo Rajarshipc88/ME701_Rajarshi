@@ -5,10 +5,18 @@ S+=mod(i,10)*(2^(j-1))
 i=div(i,10)
 end
 T=0
-for j=1:sizeof(f)
-T+=
-
-return S
+n=f
+f=string(f)
+l=length(f)
+k=l
+for j=1:l
+T+=div(n,10^(k-1))*(1/2^j)
+if div(n,10^(k-1))!=0
+n=n-10^(k-1)
 end
-D=binary_to_decimal(101,10)
-print(D)
+k=k-1
+end
+
+return S,T
+end
+
